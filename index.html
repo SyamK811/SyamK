@@ -1,0 +1,73 @@
+<html>
+<head><title>BMI INDEX</title>
+<script language="JavaScript">
+function bmi()
+{
+	var a,b,ans,ch;
+	a=Number(document.frm1.txt1.value);
+	b=Number(document.frm1.txt2.value);
+	ans=a/(b*b);
+	document.frm1.txt3.value=ans;
+	if (ans<18.5)
+	ch="Underweight";
+	else if (ans<24.9)
+	ch="Normal and healthy";
+	else if (ans<29.9)
+	ch="Overweight";
+	else
+	ch="Obese";
+	document.frm1.txt.value=ch;
+}
+</script>
+</head>
+<body bgcolor="cyan" text="red">
+<center><FONT size="25" color="indigo"><B><U>BMI INDEX</U></B></FONT></center>
+<h3>BMI stands for <b>BODY MASS INDEX</b>. <i>It is a measure of body fat based on height and weight.</i><br>Enter your weight(in kilogram) and height(in metres) and click on "SHOW MY BMI" and your BMI will appear.</h3><br>
+<MARQUEE scrollamount="10">Please enter your height and weight accurately</MARQUEE>
+<form name="frm1">
+<h4 align="center"><font color="purple">Enter your weight(in kg):
+<input type="text" name="txt1"><br><br>
+Enter your height(in m):
+<input type="text" name="txt2"><br><br></font></h4>
+<center><input type="button" value="SHOW MY BMI" onClick="bmi()">
+<input type="reset" value="Clear"></center>
+<h3 align="center"><font color="green">BMI:
+<input type="text" name="txt3"><br><br>
+Status:<input type="text" name="txt"><br><br></font></h3>
+</form>
+<font color="brown" size="8" face="courier new">
+<table border="1" bgcolor="yellow">
+<tr align="center">
+<th>BMI</th>
+<th>Status</th></tr>
+<tr align="center">
+<td> less than 18.5</td>
+<td><a Href="#Underweight">underweight</a></td></tr>
+<tr align="center">
+<td>18.5-24.9</td>
+<td><a Href="#Normal and healthy">normal and healthy</a></td></tr>
+<tr align="center">
+<td>24.9-29.9</td>
+<td><a Href="#Overweight">overweight</a></td></tr>
+<tr align="center">
+<td >greater than 29.9</td>
+<td><a Href="#Obese">obese</a></td></tr>
+</table></font>
+<br>
+<br><br>
+<br>
+<font color="brown" size="4">
+<b><A name="Underweight">UNDERWEIGHT</A></b>
+<p>An underweight person is a person whose body weight is considered too low to be healthy.A person may be underweight due to genetics, metabolism, lack of food, eating disorder, or illness (both physical and mental).Severely underweight individuals may have poor physical stamina and a weak immune system, leaving them open to infection.<br>
+Remedy; Balanced calorie intake and exercises.</p>
+<br>
+<b><A name="Normal and healthy">NORMAL AND HEALTHY</A></b>
+<p>Your have a really healthy and fit body.</p><br>
+<b><A name="Overweight">OVERWEIGHT</A></b>
+<p>Being overweight or fat is having more body fat than is optimally healthy.But the accumulation of too much storage fat can impair movement, flexibility, and alter the appearance of the body.
+<br>Remedy: The usual treatments for overweight individuals is diet and physical exercise.</p>
+<b><A name="Obese">OBESE</A></b>
+<p>Obesity is a medical condition in which excess body fat has accumulated to an extent that it may have a negative effect on health.Obesity is most commonly caused by a combination of excessive food intake, lack of physical activity, and genetic susceptibility.Excessive body weight is associated with various diseases and conditions, particularly cardiovascular diseases, diabetes, obstructive sleep, certain types of cancer, and asthma. As a result, obesity has been found to reduce life expectancy.
+<br>Remedy:Diet,exercises,meditations,surgery.</p>
+</font>
+<font color="black"><h3 align="center">&copy;SREYAS WORKS</h3></font></body></html>
